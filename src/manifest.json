@@ -1,0 +1,25 @@
+{
+	"manifest_version": 2,
+	"name": "Pica Vista",
+	"version": "0.0.1",
+	"description": "A viewer for the PICA+ library data format",
+	"homepage_url": "https://bitbucket.org/chrisboehme/picavista",
+	"author": "Christoph Böhme",
+
+	"applications": {
+		"gecko": {
+			"id": "picavista@b3e.net"
+		}
+	},
+	"content_scripts": [
+		{
+			"matches": [ "file://*/*", "http://*/*" ],
+			"js": [ "pica-parser.js", "pica-formatter.js", "picavista.js" ],
+			"run_at": "document_end"
+		}
+	],
+	"web_accessible_resources": [
+		"pica-style.css"
+	]
+}
+

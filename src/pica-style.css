@@ -1,0 +1,176 @@
+/*
+ * The MIT License (MIT)
+ * 
+ * Copyright (c) 2016 Christoph Böhme
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of
+ * this software and associated documentation files (the "Software"), to deal in
+ * the Software without restriction, including without limitation the rights to
+ * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+ * of the Software, and to permit persons to whom the Software is furnished to do
+ * so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+body {
+	font-family: sans-serif;
+	font-size: small;
+}
+
+
+/** Clear default layout */
+
+dl {
+	margin: 0em;
+	padding: 0em;
+}
+
+dt, dd {
+  margin: 0em;
+	padding: 0em;
+}
+
+
+/** Layout fields */
+
+.Fields {
+  display: flex;
+	flex-flow: row wrap;
+}
+
+.Fields > dt, 
+.Fields > dd {
+	margin: 0.1em 0em;
+}
+
+.Fields > dt {
+	flex: 1 6em;
+	padding: calc(0.4em + 1px + 0.2em) 0.5em;
+	font-weight: bold;
+}
+
+.Fields > dd {
+	flex: 1 calc(100% - 6em - 1em);
+}
+
+
+/** Layout subfields */
+
+.Subfields {
+  display: inline-flex;
+  flex-flow: row;
+	padding: 0.4em 0.5em;
+}
+
+.Subfields > dt,
+.Subfields > dd {
+  padding: 0.2em 0.4em;
+}
+
+.Subfields > dt {
+	font-weight: bold;
+}
+
+.Subfields > dt:not(:first-of-type) {
+  margin-left: 0.4em;
+}
+
+.Subfields > dt::before {
+  content: "$";
+}
+
+.Subfields > dd {
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+
+/** Set colours */
+
+.Fields > dt.Level0 {
+	background-color: #2b8fdb;
+	color: white;
+}
+
+.Level0 + * > .Subfields {
+	border: solid 1px #2b8fdb;
+	border-left: none;
+
+	background-color: #9fd3fc;
+}
+
+.Level0 + * > .Subfields > dt {
+	border: solid 1px #2b8fdb;
+	border-right: none;
+	background-color: #2b8fdb;
+  color: white;
+}
+
+.Level0 + * > .Subfields > dd {
+	border: solid 1px #2b8fdb;
+	border-left: none;
+	background-color: #e0eeff;
+	color: black;
+}
+
+.Fields > dt.Level1 {
+	background-color: #db2b8f;
+	color: white;
+}
+
+.Level1 + * > .Subfields {
+	border: solid 1px #db2b8f;
+	border-left: none;
+
+	background-color: #fc9fd3;
+}
+
+.Level1 + * > .Subfields > dt {
+	border: solid 1px #db2b8f;
+	border-right: none;
+	background-color: #db2b8f;
+  color: white;
+}
+
+.Level1 + * > .Subfields > dd {
+	border: solid 1px #db2b8f;
+	border-left: none;
+	background-color: #ffe0ee;
+	color: black;
+}
+
+.Fields > dt.Level2 {
+	background-color: #8fdb2b;
+	color: white;
+}
+
+.Level2 + * > .Subfields {
+	border: solid 1px #8fdb2b;
+	border-left: none;
+
+	background-color: #d3fc9f;
+}
+
+.Level2 + * > .Subfields > dt {
+	border: solid 1px #8fdb2b;
+	border-right: none;
+	background-color: #8fdb2b;
+  color: white;
+}
+
+.Level2 + * > .Subfields > dd {
+	border: solid 1px #8fdb2b;
+	border-left: none;
+	background-color: #eeffe0;
+	color: black;
+}
