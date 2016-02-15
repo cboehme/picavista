@@ -11,6 +11,9 @@
 			"id": "picavista@b3e.net"
 		}
 	},
+	"background": {
+		"scripts": [ "rewrite-content-type.js" ]
+	},
 	"content_scripts": [
 		{
 			"matches": [ "file://*/*", "http://*/*" ],
@@ -20,6 +23,11 @@
 	],
 	"web_accessible_resources": [
 		"pica-style.css"
+	],
+	"permissions": [
+		"webRequest",
+		"webRequestBlocking",
+		"http://*/*"
 	]
 }
 
