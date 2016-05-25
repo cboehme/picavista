@@ -45,7 +45,12 @@ function formatRecord(picaData) {
 		},
 		subfield: function(name, value) {
 			if (name.length > 0) {
-				html = html.concat('<dt>' + name + '</dt><dd>' + value + '</dd>');
+				if (name === '9' && /[0-9xX]+/.test(value)) {
+					valueText = '<a href="' + value + '" />' + value + '</a>';
+				} else {
+					valueText = value;
+				}
+				html = html.concat('<dt>' + name + '</dt><dd>' + valueText + '</dd>');
 			}
 		}
 	};
