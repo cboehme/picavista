@@ -64,6 +64,6 @@ function getIdn(picaData) {
 	if (match !== null && match[1] !== undefined) {
 		return match[1];
 	}
-	return "No IDN found";
+	return chrome.i18n.getMessage('NO_IDN_FOUND');
 }
 

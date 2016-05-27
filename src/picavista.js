@@ -42,8 +42,8 @@
 	style.rel = 'stylesheet';
 	document.head.appendChild(style);
 
-	var title = document.createElement("title");
-	title.text = "IDN: " + getIdn(picaData);
+	var title = document.createElement('title');
+	title.text = chrome.i18n.getMessage('PAGE_TITLE_IDN', getIdn(picaData));
 	document.head.appendChild(title);
 
 	document.body.innerHTML = formatRecord(picaData);

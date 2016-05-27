@@ -1,0 +1,41 @@
+{
+	"DESCRIPTION": {
+		"message": "A viewer for the PICA+ data format used in libraries",
+		"description": "Extension description used in the manifest file"
+	},
+	"PAGE_TITLE_IDN": {
+		"message": "IDN: $IDN$",
+		"description": "Used as first part of the page title",
+		"placeholders": {
+			"IDN": {
+				"content": "$1",
+				"example": "0012324132"
+			}
+		}
+	},
+	"NO_IDN_FOUND": {
+		"message": "No IDN found (field 003@$0 is missing)",
+		"description": "Used in the IDN placeholder ini PAGE_TITLE_IDN if no IDN was found in the record"
+	},
+	"LOG_CONTENT_TYPE_FOUND": {
+		"message": "found content type: $CONTENT_TYPE$",
+		"description": "Logs the content type of the page that is being loaded",
+		"placeholders": {
+			"CONTENT_TYPE": {
+				"content": "$1",
+				"example": "application/x-pica"
+			}
+		}
+	},
+	"LOG_REPLACING_CONTENT_TYPE": {
+		"message": "replacing it with: $CONTENT_TYPE$",
+		"description": "Logs the content type that replaces the original one",
+		"placeholders": {
+			"CONTENT_TYPE": {
+				"content": "$1",
+				"example": "text/x-pica"
+			}
+		}
+	}
+}
+
