@@ -1,8 +1,8 @@
 #!/bin/sh
 
-XPI_NAME=picavista.xpi
+ZIP_NAME=picavista.zip
 
-rm -f $XPI_NAME
+rm -f $ZIP_NAME
 
-zip -j $XPI_NAME src/*
+zip -j $ZIP_NAME src/*
 
