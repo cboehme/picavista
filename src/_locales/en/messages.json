@@ -15,7 +15,7 @@
 	},
 	"NO_IDN_FOUND": {
 		"message": "No IDN found (field 003@$0 is missing)",
-		"description": "Used in the IDN placeholder ini PAGE_TITLE_IDN if no IDN was found in the record"
+		"description": "Used in the IDN placeholder in PAGE_TITLE_IDN if no IDN was found in the record"
 	},
 	"LOG_CONTENT_TYPE_FOUND": {
 		"message": "found content type: $CONTENT_TYPE$",
