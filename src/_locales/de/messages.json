@@ -1,0 +1,41 @@
+{
+	"DESCRIPTION": {
+		"message": "Ein Betrachter für das PICA+ Datenformat, das in Bibliotheken verwendet wird.",
+		"description": "Beschreibung der Erweiterung für die Manifest-Datei."
+	},
+	"PAGE_TITLE_IDN": {
+		"message": "IDN: $IDN$",
+		"description": "Benutzt als erster Teil des Seitentitels",
+		"placeholders": {
+			"IDN": {
+				"content": "$1",
+				"example": "0012324132"
+			}
+		}
+	},
+	"NO_IDN_FOUND": {
+		"message": "Keine IDN gefunden (Feld 003@$0 fehlt)",
+		"description": "Benutzt im IDN Platzhalter in PAGE_TITLE_IDN, wenn keine IDN im Datensatz gefunden wurde."
+	},
+	"LOG_CONTENT_TYPE_FOUND": {
+		"message": "Inhaltstyp gefunden: $CONTENT_TYPE$",
+		"description": "Loggt den Inhaltstyp der Seite die gerade geladen wird.",
+		"placeholders": {
+			"CONTENT_TYPE": {
+				"content": "$1",
+				"example": "application/x-pica"
+			}
+		}
+	},
+	"LOG_REPLACING_CONTENT_TYPE": {
+		"message": "wird ersetzt mit: $CONTENT_TYPE$",
+		"description": "Loggt den Inhaltstyp der den Originalwert ersetzt.",
+		"placeholders": {
+			"CONTENT_TYPE": {
+				"content": "$1",
+				"example": "text/x-pica"
+			}
+		}
+	}
+}
+
