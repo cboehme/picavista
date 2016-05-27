@@ -4,5 +4,8 @@ ZIP_NAME=picavista.zip
 
 rm -f $ZIP_NAME
 
-zip -j $ZIP_NAME src/*
+cd src
 
+zip -r ../$ZIP_NAME *
+
+cd ..
