@@ -2,7 +2,7 @@
 
 Pica Vista is a browser extension for displaying PICA+ library records nicely
 formatted in the browser. The extension is built as a web extension and works 
-in Firefox and Google Chrome. 
+in Firefox and Google Chrome. It is available on the [Chrome Web Store](https://chrome.google.com/webstore/detail/pica-vista/gneoojoegjddgibaljfnnddojmjnokgp).
 
 ## How are PICA+ records recognized?
 
@@ -26,4 +26,3 @@ PICA+. For other `text/*` media types this restriction is not enforced.
 Support for `application/x-pica+` is achieved by rewriting the response 
 headers. This works only on Google Chrome as Firefox does not allow the
 `content-type` header to be modified by web extensions.
-
